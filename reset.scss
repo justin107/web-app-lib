@@ -54,3 +54,15 @@ q:after {
 *:focus {
   outline:none;
 }
+
+@mixin vc($m-left){
+  position:absolute;right:$m-left*1%;width:100%-$m-left*2*1%;top:50%;-webkit-transform:translateY(-50%);transform:translateY(-50%);
+}
+@mixin box($width,$height){
+  width:($width/$baseFontSize)+rem;
+  height:($height/$baseFontSize)+rem;
+}
+$baseFontSize: 64;
+@function p2r($px) {
+  @return $px/$baseFontSize+rem;
+}
