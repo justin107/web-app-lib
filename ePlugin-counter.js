@@ -125,3 +125,18 @@
 	$.fn.extend(counter);
 
 })(jQuery, window);
+
+/*
+$("#num").counterInit({
+time:timeSet,//值越小越快
+value:sNum,//显示的初始值
+upTime:upTime,//经过upTime秒会加速变化
+onStart:function(){
+xxxx
+},
+onStop:function(){
+xxxx
+}
+});
+$("#num").counterSetValue(endNum);
+*/
